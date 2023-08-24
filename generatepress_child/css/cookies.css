@@ -1,0 +1,134 @@
+/* ---------- ESTILOS DEL BANNER DE COOKIES ---------- */
+
+#moove_gdpr_cookie_info_bar {
+    /* Fondo opaco */
+    background: rgba(0, 0, 0, 0.50)!important;
+    /* Permita ocupar toda la pantalla */
+    max-height: 100vh!important;
+}
+
+.moove-gdpr-info-bar-container {
+    /* Contenedor con el aviso de las cookies */
+    /* Centrar el contenedor */
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    /* Tamaño del contenedor completo */
+    height: 100vh!important;
+}
+
+.moove-gdpr-info-bar-content {
+    /* Párrafo y botones del aviso de las cookies */
+    /* Tamaño del contenido */
+    max-width: 50%;
+    /* Hace que el botón se coloque debajo del texto */
+    flex-direction: column!important;
+    background: white;
+    padding: 2%!important;
+}
+
+#moove_gdpr_cookie_info_bar.moove-gdpr-light-scheme {
+    /* Eliminar el borde superior que aparece por defecto */
+    border: none!important;
+    /* Añadir sombra al contenedor */
+    box-shadow: 5px 5px 15px #E2E2E2
+}
+
+#moove_gdpr_cookie_info_bar.moove-gdpr-info-bar-hidden {
+    /* Hacer que desaparezca correctamente el banner */
+    bottom: -2100px!important;
+}
+
+
+/* Estilo para el BOTÓN */
+
+.moove-gdpr-button-holder {
+    /* Añadir margen superior respecto al texto en el banner principal */
+    margin-top: 20px!important;
+    /* Eliminar paddings innecesarios por defecto en el banner principal */
+    padding-left: 0px !important;
+}
+
+
+/* Mantener el padding en el contenedor de los botones interiores */
+
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder {
+    padding-left: 60px!important;
+    padding-right: 60px!important;
+}
+
+button.mgbutton {
+    /* Cambiar tamaño del botón y el tamaño de fuente en el banner principal */
+    padding: 12px 50px !important;
+    font-size: 16px !important;
+}
+
+#moove_gdpr_cookie_info_bar .moove-gdpr-cookie-notice p {
+    /* Cambiar el estilo del texto */
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
+    color: var(--c-negro) !important;
+}
+
+button.moove-gdpr-infobar-allow-all {
+    /* Estilos del botón de activar todas */
+    padding: 12px 50px !important;
+    background-color: var(--c-primario) !important;
+}
+
+button.moove-gdpr-modal-allow-all {
+    /* Estilos del botón de activar todas */
+    background-color: var(--c-primario) !important;
+    border-color: var(--c-primario) !important;
+}
+
+button.moove-gdpr-modal-allow-all:hover {
+    /* Estilos del botón de activar todas en el estado hover*/
+    background-color: #ffffff !important;
+    border-color: var(--c-primario) !important;
+    color: var(--c-primario)!important;
+}
+
+
+/* Añadir botón GUARDAR en el panel de COOKIES */
+
+#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton.moove-gdpr-modal-save-settings {
+    display: block !important;
+}
+
+@media screen and (max-width:1024px) {
+    /* Reducir padding del contenedor de botones interiores en las tablet para que no se descuadren */
+    #moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder {
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .moove-gdpr-info-bar-content {
+        /* Añadir relleno en el contenedor y que se separe de la ventana*/
+        padding: 4%!important;
+        max-width: 90%;
+    }
+    .moove-gdpr-button-holder {
+        /* Centrar el botón de aceptar en los dispositivos móviles */
+        justify-content: center !important;
+        padding: 10px !important;
+    }
+    button.mgbutton {
+        /* Cambiar tamaño del botón y el tamaño de fuente */
+        padding: 5px 10px !important;
+        font-size: 16px !important;
+    }
+    /* Hacer más grande sólo el botón principal en el móvil sin afectar a los botones interiores */
+    #moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton {
+        font-size: 15px!important;
+        padding: 15px 35px!important;
+    }
+}
+
+.gdpr-sr-only {
+    background-color: var(--c-primario) !important;
+    color: var(--c-blanco) !important;
+}

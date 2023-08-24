@@ -1,0 +1,144 @@
+/* BOTONES */
+
+.btn .vce-button {
+    color: var(--c-blanco) !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 3px;
+    margin: 0px;
+    position: relative;
+    border-left: 7px solid var(--c-negro) !important;
+    border-right: 7px solid var(--c-negro) !important;
+    background-color: var(--c-primario) !important;
+    text-transform: uppercase;
+    font-size: 1rem /*16px*/ !important;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+}
+
+.btn .vce-button:hover {
+  color: var(--c-blanco) !important;
+}
+
+.btn .vce-button::after {
+  content: "";
+  background: var(--c-negro);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.btn .vce-button:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+.btn-white .vce-button {
+    color: var(--c-negro) !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 3px;
+    margin: 0px;
+    position: relative;
+    border-left: 7px solid var(--c-negro) !important;
+    border-right: 7px solid var(--c-negro) !important;
+    background-color: var(--c-blanco) !important;
+    text-transform: uppercase;
+    font-size: 1rem /*16px*/ !important;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+}
+
+.btn-white .vce-button:hover {
+  color: var(--c-blanco) !important;
+}
+
+.btn-white .vce-button::after {
+  content: "";
+  background: var(--c-negro);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.btn-white .vce-button:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+/* BOTÓN ENVÍO FORMULARIO */
+
+.btn-enviar input[type=submit] {
+    color: var(--c-blanco) !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 16px 20px;
+    margin: 0px;
+    position: relative;
+    border-left: 7px solid var(--c-negro) !important;
+    border-right: 7px solid var(--c-negro) !important;
+    background-color: var(--c-primario) !important;
+    text-transform: uppercase;
+    font-size: 1rem /*16px*/ !important;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 1;
+}
+
+.btn-enviar input[type=submit]:hover {
+  color: var(--c-negro) !important;
+  background-color: var(--c-blanco) !important;
+}
+
+.btn-enviar input[type=submit]::after {
+  content: "";
+  background: var(--c-negro);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.btn-enviar input[type=submit]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}

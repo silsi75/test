@@ -1,0 +1,145 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+/* FUENTE */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+/* VARIABLES POR DEFECTO */
+
+:root {
+    --c-negro: #000;
+    --c-blanco: #FFFFFF;
+    --c-primario: red;
+    --c-secundario: blue;
+    --c-grisclaro: #EFEFEF;
+    --c-gris: #f9f9f9;
+}
+
+/* OUTLINE */
+
+*:focus { outline: 5px solid orange; }
+
+/* ESTILOS COMUNES */
+
+.zindex0 {
+  z-index:0;
+}
+
+.zindex1 {
+  z-index:1;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--c-negro);
+  font-size: 1.125rem;
+  line-height: 1.6875rem ;
+}
+
+a {
+  color: var(--c-primario);
+  text-decoration: none;
+}
+
+a, a:hover {
+  transition: all 0.4s ease !important;
+}
+
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+  color: var(--c-primario);
+  font-weight: 700;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+input#nombre,
+input#telefono,
+input#email {
+  background-color: var(--c-blanco) !important;
+  border-bottom: 2px solid var(--c-primario);
+  margin-top: 5px;
+  width: 100%
+}
+
+#form-contacto textarea.wpcf7-form-control {
+  background-color: var(--c-blanco) !important;
+  border-bottom: 2px solid var(--c-primario);
+  margin-top: 5px;
+  width: 100%;
+  max-height: 150px;
+}
+
+/* LOGOS KIT DIGITAL */
+
+.logos-kit-digital {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos-kit-digital img {
+    display: block;
+    max-width: 21%;
+    padding: 0 20px;
+}
+
+.logos-kit-digital>img:last-child {
+    max-width: 15%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (max-width: 1080px) {
+
+  /* LOGOS KIT DIGITAL */
+
+  .logos-kit-digital img {
+      max-width: 210px;
+  }
+
+  .logos-kit-digital>img:last-child {
+      max-width: 23%;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  /* LOGOS KIT DIGITAL */
+
+  .logos-kit-digital img {
+      max-width: 165px;
+      padding: 10px 5px;
+  }
+
+  .logos-kit-digital>img:last-child {
+      max-width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+
+
+}
+
+/* CAPTCHA */
+
+.grecaptcha-badge {
+  display: none;
+}
